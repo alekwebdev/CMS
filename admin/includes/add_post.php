@@ -23,9 +23,8 @@ $query .= "VALUES('{$post_category_id}','{$post_title}','{$post_author}',now(),'
        
 $create_post_query = mysqli_query($connection, $query);  
 
-    if(!$create_post_query) {
-        die("QUERY FAILED" . mysqli_error($connection));
-    }
+confirm($create_post_query);
+
 }
 ?>
 
