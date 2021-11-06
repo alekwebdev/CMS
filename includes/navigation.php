@@ -10,7 +10,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Start Bootstrap</a>
+            <a class="navbar-brand" href="#">CMS</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -29,7 +29,7 @@
 
                     ?>
                         <li>
-                            <a href="admin">Admin</a>
+                            <a href="admin/index.php">Admin</a>
                         </li>
                         <!--
                         <li>
