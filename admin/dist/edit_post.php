@@ -124,6 +124,6 @@ $query = "SELECT * FROM posts  WHERE post_id = $the_post_id";
       </div>
 
        <div class="form-group">
-          <input class="btn btn-primary" type="submit" name="update_post" value="Publish Post">
+          <input class="btn btn-primary" type="submit" name="update_post" value="Update Post">
       </div>
 </form>

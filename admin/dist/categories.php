@@ -20,8 +20,8 @@
                         </h1>
 
 
-
-                        <div class="col-xs-6">
+                        <div class="row">
+                        <div class="col-md-6">
 
                         <?php
                             insert_categories();
@@ -47,7 +47,8 @@
                            ?>
 
                         </div>
-                        <div class="col-xs-6">                       
+                        <div class="col-md-6"> 
+                            <br>                      
                             <table class = "table table-bordered table-hover">
                                 <thead>
                                     <tr>
@@ -68,7 +69,7 @@
                                 </tbody>
                             </table>
                         </div>
-
+                            </div>
                     </div>
                 </div>
                 <!-- /.row -->
