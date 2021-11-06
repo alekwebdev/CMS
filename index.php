@@ -5,16 +5,13 @@
 
 <?php include "includes/navigation.php"; ?>
 
-<!-- Page Content -->
-
-<div class="container">
+  <!-- Page Content -->
+  <div class="container">
 
     <div class="row">
 
-        <!-- Blog Entries Column -->
-
-        <div class="col-md-8">
-
+      <!-- Blog Entries Column -->
+      <div class="col-md-8">
             <?php 
                 $query = "SELECT * FROM posts";
 
@@ -29,41 +26,57 @@
                             
                          ?>
 
-            <h1 class="page-header">
+            <h1 class="my-4">
                 Page Heading
                 <small>Secondary Text</small>
             </h1>
 
             <!-- First Blog Post -->
-            <h2>
-                <a href="#"><?= $post_title; ?></a>
-            </h2>
-            <p class="lead">
-                by <a href="inzdex.php"><?= $post_author; ?></a>
-            </p>
-            <p><span class="glyphicon glyphicon-time"></span> <?= $post_date; ?></p>
-            <hr>
-            <img class="img-responsive" src="images/<?= $post_image; ?>" alt="nesto nema slike, haha">
-            <hr>
-            <p><?= $post_content ?>.</p>
-            <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+            <div class="card mb-4">
+              <div class="card-body">
+                <h2 class="car-title">
+                    <a href="#"><?= $post_title; ?></a>
+                </h2>
+                <p class="cart-text">
+                    by <a href="inzdex.php"><?= $post_author; ?></a>
+                </p>
+                <p><span class="glyphicon glyphicon-time"></span> <?= $post_date; ?></p>
+                <hr>
+                <img class="card-img-top" src="images/<?= $post_image; ?>" alt="nesto nema slike, haha">
+                <hr>
+                <p><?= $post_content ?>.</p>
+                <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+              </div>
+            </div>
 
-            <hr>
+
 
             <?php 
-                        }
-                    
-                ?>
-
+                }     
+            ?>
+        <div>                
+        <!-- Pagination -->
+        <ul class="pagination justify-content-center mb-4">
+          <li class="page-item">
+            <a class="page-link" href="#">&larr; Older</a>
+          </li>
+          <li class="page-item disabled">
+            <a class="page-link" href="#">Newer &rarr;</a>
+          </li>
+        </ul>
         </div>
+        </div>
+      <!-- Sidebar Widgets Column -->
+      
 
-        <!-- Blog Sidebar Widgets Column -->
+        <?php include "includes/sidebar.php" ?>   
 
-        <?php include "includes/sidebar.php" ?>
+        <!-- Side Widget --> 
+        
+</div>
 
-    </div>
     <!-- /.row -->
 
-    <hr>
+  <!-- /.container -->
 
-<?php include "includes/footer.php"; ?>
+  <?php include "includes/footer.php"; ?>
