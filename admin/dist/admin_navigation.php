@@ -61,7 +61,7 @@
                                 Categories
                             </a>
 
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="comments.php">
                                 <div class="sb-nav-link-icon"><i class="fa fa-fw fa-file"></i></div>
                                 Comments
                             </a>
