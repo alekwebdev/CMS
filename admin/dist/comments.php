@@ -37,7 +37,7 @@
                                 echo "nice 200";
                                 break;
                         default:
-                            include 'view_all_posts.php';
+                            include 'view_all_comments.php';
                             break;
                     }
                     ?>
