@@ -18,6 +18,7 @@
                 $select_all_posts_query = mysqli_query($connection, $query);
 
                  while($row = mysqli_fetch_assoc($select_all_posts_query)) {
+                        $post_id = $row['post_id'];
                         $post_title = $row['post_title'];
                         $post_author = $row['post_author'];
                         $post_date = $row['post_date'];
@@ -35,7 +36,7 @@
             <div class="card mb-4">
               <div class="card-body">
                 <h2 class="car-title">
-                    <a href="#"><?= $post_title; ?></a>
+                    <a href="post.php?p_id=<?= $post_id; ?>"><?= $post_title; ?></a>
                 </h2>
                 <p class="cart-text">
                     by <a href="inzdex.php"><?= $post_author; ?></a>
